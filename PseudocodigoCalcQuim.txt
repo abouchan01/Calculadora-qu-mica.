@@ -1,0 +1,23 @@
+//Pseudocode Quimica fundamentos de Programación
+
+while r=1:
+	Dar instrucciones y nombrar opciones.
+	el <- elección del usuario
+
+	if el = 1:
+		a <- Valor del pH
+		j <- -a
+		b <- 10^j
+		imprimir: El valor de H+ es: *b
+
+	if el = 2:
+		a <- Valor del pH
+		i <- Concentración inicial.
+		j <- -a
+		b <- 10^j
+		c <- b^2
+		h <- c/i
+		imprimir: La constante de acidez es: *h
+
+		if el = 3:
+			
