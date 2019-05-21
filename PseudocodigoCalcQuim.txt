@@ -8,7 +8,7 @@ while r=1:
 		a <- Valor del pH
 		j <- -a
 		b <- 10^j
-		imprimir: El valor de H+ es: *b
+		imprimir: "El valor de H+ es:" *b
 
 	if el = 2:
 		a <- Valor del pH
@@ -17,7 +17,39 @@ while r=1:
 		b <- 10^j
 		c <- b^2
 		h <- c/i
-		imprimir: La constante de acidez es: *h
+		imprimir: "La constante de acidez es:" *h
 
 		if el = 3:
-			
+			a <- tiempo en minutos
+			j <- a*60
+			imprimir: "El tiempo en segundos es:" *j
+
+		if el = 4:
+			a <- Primer amperaje
+			b <- Segundo amperaje
+			i <- a*b
+			imprimir: "La carga es:" *i
+
+		if el = 5:
+			a <- tiempo en segundos
+			b <- amperaje en amperes
+			i <- a*b
+			imprimir: "La carga es:" *i
+
+		if el = 6:
+			a <- Valor de carga
+			i <- (a*4)/(96484.484*4)
+			imprimir: "La carga es" *i "gramos de H2"
+
+		if el = 7:
+			Ejecutar funcion R
+
+		else: 
+		 	imprimir: No ha seleccionado alguna opción valida.
+
+	imprimir:"Si desea volver a utilizar el programa digite 1, de lo contrario, digite cualquier otro numero"
+
+	if r != 1
+	imprimir: "Gracias por utilizar el programa"
+
+	Fin.
