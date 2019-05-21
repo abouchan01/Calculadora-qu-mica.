@@ -25,71 +25,76 @@ int main ()
     switch (el){                                                   //Comenzamos a ver que opción eligieron y ejeutamos la operación deseada.
 
       case 1: 
-      printf("Dame el valor de tu PH\n");
-      scanf("\n%f",&a);                                             //Guardamos valor del pH
-       j=a*(-1);
-       b= pow(10,j);        									    //elevación 10 a la j
-       
-      printf("\nElvalor de H+ es:%f \n",b);                         //Imprimimos el valor final.
+        printf("Dame el valor de tu PH\n");
+        scanf("\n%f",&a);                                             //Guardamos valor del pH
+        j=a*(-1);
+        b= pow(10,j);        									    //elevación 10 a la j
+        system("cls");                            //Limpiar pantalla
+        printf("\nElvalor de H+ es:%f \n",b);                         //Imprimimos el valor final.
       break;
       
       case 2: 
-      printf("Dame el valor de tu PH\n");
-      scanf("\n%f",&a);
-      printf("Dame el valor de tu concentraci%cn inicial\n",224);
-      scanf("\n%f",&i);
-       j=a*-1;
-       b= pow(10,j);
-       c=(b*b);
-       h=c/i;
-      printf("\nLa constante de acidez es:\n");
-      printf("\n%f",h);
+        printf("Dame el valor de tu PH\n");
+        scanf("\n%f",&a);
+        printf("Dame el valor de tu concentraci%cn inicial\n",224);
+        scanf("\n%f",&i);
+        j=a*-1;
+        b= pow(10,j);
+        c=(b*b);
+        h=c/i;
+        system("cls");
+        printf("\nLa constante de acidez es:\n");
+        printf("\n%f",h);
       break;
       
       case 3: 
-      printf("Dame el valor de tu tiempo en minutos\n");
-      scanf("\n%f",&a);
-       j=a*60;
-      printf("\nEl tiempo en segundo es:%f S\n",j);
+        printf("Dame el valor de tu tiempo en minutos\n");
+        scanf("\n%f",&a);
+        j=a*60;
+        system("cls");
+        printf("\nEl tiempo en segundo es:%f S\n",j);
       break;
       
       case 4: 
-      printf("Dame tu primer valor de amperaje\n");
-      scanf("\n%f",&a);
-      printf("Dame tu segundo valor de amperaje\n");
-      scanf("\n%f",&b);
-      j=a+b;
-      i=j/2;
-      printf("\nEl promedio de tu amperaje es:%f A\n",i);
+        printf("Dame tu primer valor de amperaje\n");
+        scanf("\n%f",&a);
+        printf("Dame tu segundo valor de amperaje\n");
+        scanf("\n%f",&b);
+        j=a+b;
+        i=j/2;
+        system("cls");
+        printf("\nEl promedio de tu amperaje es:%f A\n",i);
       break; 
       
       case 5: 
-      printf("Dame el valor de tu tiempo, en segundos\n");
-      scanf("\n%f",&a);
-      printf("Dame el valor de tu amperaje, en ampers\n");
-      scanf("\n%f",&b);
-      i=a*b;
-      printf("\nLa carga es:%f C\n",i);
+        printf("Dame el valor de tu tiempo, en segundos\n");
+        scanf("\n%f",&a);
+        printf("Dame el valor de tu amperaje, en ampers\n");
+        scanf("\n%f",&b);
+        i=a*b;
+        system("cls");
+        printf("\nLa carga es:%f C\n",i);
       break;
       
       case 6: 
-      printf("Dame el valor de tu carga\n");
-      scanf("\n%f",&a);
-      i=(a*4)/(96484.484*4);
-      printf("Recuerda que tu formula es\n");
-      printf("n(g)=I(A)*(1(F)/96484.484)*(1(mol)/4(F)*(32(gO2)))\n");
-      printf("\nLa carga es:%f g de H2\n",i);
+        printf("Dame el valor de tu carga\n");
+        scanf("\n%f",&a);
+        i=(a*4)/(96484.484*4);
+        printf("Recuerda que tu formula es\n");
+        printf("n(g)=I(A)*(1(F)/96484.484)*(1(mol)/4(F)*(32(gO2)))\n");
+        printf("\nLa carga es:%f g de H2\n",i);
       break;
       
       case 7: 
-	  R();
+	       R();          //Ejecutar función R
         break;
       
-      
+      //En caso de que la opción dada no sea valida 
        default: printf("\n\nNo ha seleccionado ninguna opcion valida.");
       break;
 
     }
+    //Asegurarse de querer repetir el programa
     printf("\n\nSi desea volver a utilizar el programa digite 1, de lo contrario, digite cualquier otro numero: ");
     scanf("%d", &r);
     system("cls");
@@ -106,6 +111,10 @@ system("pause");
 
 return 0;
 }
+
+
+
+//En esta funcion usamos el método de mínimos cuadrados para encontrar la regresión lineal de una entalpía
 void R(void)
 {
 		double Ti,T1,T2,T3,T4,T5,T6,a,b,c,d,e,f,Tsuma,m1,m2,m3,m4,m5,m6,Msuma,mt1,mt2,mt3,mt4,mt5,mt6,sumaMP,mp1,mp2,mp3,mp4,mp5,mp6,MPsuma,P,B;
