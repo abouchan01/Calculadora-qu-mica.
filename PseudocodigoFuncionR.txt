@@ -1,0 +1,46 @@
+Pseudocodigo funcion R:
+Representa la regresion lineal con el método de mínimos cuadrados
+
+Ti <- temperatura inicial en grados centigrados
+a <- primer temperatura final en grados centrigrados
+b <- segunda temperatura final en grados centrigrados
+c <- tercera temperatura final en grados centrigrados
+d <- cuarta temperatura final en grados centrigrados
+e <-  quintatemperatura final en grados centrigrados
+f <- sexta temperatura final en grados centrigrados
+
+T1 <- a-Ti;
+T2 <- b-Ti
+T3 <- c-Ti
+T4 <- d-Ti
+T5 <- e-Ti
+T6 <- f-Ti
+Tsuma <- T1+T2+T3+T4+T5+T6                    //Esto es y
+
+Obtener los 6 valores de gramos de CaCl2 adicionados.
+m1, m2, m3, m4, m5 ,m6 <- Seis valores de CaCl2
+Msuma <- m1+m2+m3+m4+m5+m6               //Esto es x
+
+mt1 <- m1*T1
+mt2 <- m2*T2
+mt3 <- m3*T3
+mt4 <- m4*T4
+mt5 <- m5*T5 
+mt6 <- m6*T6
+sumaMP <- mt1+mt2+mt3+mt4+mt5+mt6         //    Esto es xy
+
+mp1 <- m1^2
+mp2 <- m2^2
+mp3 <- m3^2
+mp4 <- m4^2
+mp5 <- m5^2
+mp6 <- m6^2
+MPsuma <- mp1+mp2+mp3+mp4+mp5+mp6       // Esto es x2
+
+P <- ((6*sumaMP)-(Msuma*Tsuma))/((6*MPsuma)-(Msuma^2));        Esto es m
+B <- ((Tsuma*MPsuma)-(sumaMP*Msuma))/((6*MPsuma)-(Msuma^2));   Esto es b
+
+imprimir: "El modelo matematico de entalpia es:T(C)=" *P "(C/g)m(g)+" B "(C)"
+
+fin.
+

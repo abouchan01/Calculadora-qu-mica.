@@ -1,5 +1,6 @@
 //Pseudocode Quimica fundamentos de Programación
 
+r=1
 while r=1:
 	Dar instrucciones y nombrar opciones.
 	el <- elección del usuario
@@ -49,7 +50,11 @@ while r=1:
 
 	imprimir:"Si desea volver a utilizar el programa digite 1, de lo contrario, digite cualquier otro numero"
 
+	r <- Seleccion de usuario
 	if r != 1
 	imprimir: "Gracias por utilizar el programa"
 
 	Fin.
+
+
+
